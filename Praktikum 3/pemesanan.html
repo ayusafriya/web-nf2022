@@ -4,121 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pemesanan</title>
-
+    <title>Pemesanan barang</title>
 </head>
-<body>
-    <h1>Black Goose Bistro |
-        Pizza-on-Demand
-    </h1>
-    <p>Our 12 wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour</p>
-    
-    <form action="sukses.html">
 
-        <h3>Your Information</h3>
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>:
-                    <input type="text">
+<body style="width: 80%; margin: auto; background-color: #D3D3D3;">
+    <div style="padding-top: 2%; display: flex; justify-content: center; ">
+        <nav style=" text-align: center; width: 100%; border: 3px solid black; background-color:#E9ECEB;">
+                
+             <ul style="list-style-type: none; display: flex; justify-content: space-between;">
+                <li>
+                    <p style="font-size: 22px; margin: -1%;color:#E6E6E6;">
+                        <a href=""> Home</a>
+                    </p>
+                </li>
+                <li>
+                    <p style="font-size: 22px; margin: -1%;">
+                        <a href="">Generate Link</a>
+                    </p>
+                </li>
+                <li>
+                    <p style="font-size: 22px; margin: -1%;">
+                        <a href=""> Transaction History</a>
+                    </p>
+                </li>
+                <li>
+                    <p style="font-size: 22px; margin: -1%;">
+                        <a href="">Policy</a>
+                    </p>
+                </li>
+                <li>
+                    <p style="font-size: 22px; margin: -1%; padding-right: 50px;">
+                        <a href="">Logout</a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div style="display: flex; padding-top: 40px; padding-left: 10%;">
+        <table style="width: 30%; align-items: baseline; height: fit-content; justify-content: end;">
+         <tr>
+            <td>
+              <img style="width: 70%;" src="macbook.jpg" alt="">
                 </td>
             </tr>
-            <tr>
-                <td>Address</td>
-                <td>:
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>Telephone Number</td>
-                <td>:
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>:
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>Delivery Instruction</td>
-                <td>:
-                    <textarea cols="21" rows="3"
-                    maxlength="400" placeholder="No more than 400 chatacters long"></textarea> 
-            
+             <tr>
+                <td>
+                    <button><label for="file">Upload Gambar</label></button>
+                    <input style="visibility: hidden;" type="file" id="file" name="file">
                 </td>
             </tr>
         </table>
-        <fieldset>
-            <legend>Design Your Dream Pizza</legend>
-
-            <h4>Curst (Choose One)</h4>
-            <ul>
-                <li>
-                    <input type="radio" id="classic" name="crust">
-                    <label for="cassic"> Classic White</label>
-                   
-                </li>
-                <li>
-                    <input type="radio" id="multi" name="crust">
-                    <label for="multi">Multigrain</label>
-                </li>
-                <li>
-                    <input type="radio" id="una" name="crust">
-                    <label for="una">Una Melt</label>
+        
+        <form action="suksesbarang.html">
+            
+    <table>
+        <tr>
+            <td>
+                <label>Title Here</label>
+                </td>
+            <td>
+                <input type="text" id="title" style="width: 100%;"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Description</label>
+                </td>
+                <td><textarea cols="30" rows="3"  style="width: 100%;">
+                </textarea></td>
+            
+        </tr>
+        <tr>
+            <td>
+                <label>Account number</label>
+                </td>
+                <td><input type="text" id="Accounnt" style="width: 100%;"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Bank</label>
+                </td>
+                <td><select>
+                    <option>BNI</option>
+                    <option>BSI</option>
+                    <option>BCA</option>
                     
-                </li>
-                <li>
-                    <input type="radio" id="cheesy" name="crust">
-                    <label for="cheesy">Cheesy Galore</label>
-                   
-                </li>
-                <li>
-                    <input type="radio" id="meat" name="crust">
-                    <label for="meat">Meat Lovers</label>
-                    
-                </li>
-            </ul>
-
-            <h4>Toppings (Choose as many as you want)</h4>
-            <ul>
-                <li>
-                    <input type="checkbox">
-                    Red Sauce
-                </li>
-                <li>
-                    <input type="checkbox">
-                    White Sauce
-                </li>
-                <li>
-                    <input type="checkbox">
-                    Mozzarella Cheese
-                </li>
-                <li>
-                    <input type="checkbox">
-                    Papperoni
-                </li>
-                <li>
-                    <input type="checkbox">
-                    Mushroom
-                </li>
-                <li>
-                    <input type="checkbox">
-                    Peppers
-                </li>
-                <li>
-                    <input type="checkbox">
-                    Anchovies
-                </li>
-            </ul>
-            <h4>Number</h4>
-            <label>How many pizzas:</label>
-            <input type="number" min="1" max="10">
-
-            <input type="submit" value="Bring me a pizza">
-            <input type="reset">
-        </fieldset>
-    </form>
+                    </select>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Account Holder</label>
+                </td>
+                <td><input type="text" id="name" style="width: 100%;" ></td>
+        </tr>
+        <tr>
+                <td style="display: flex;"><label>Transaction : </label></td>
+                <td>
+                    <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    </select>
+                    <br>
+                    <p><font size = "1" > *if the transaction for 3 person, choose 3 from the drop list</font></p>
+                    <p>
+            <label><input type="checkbox" name="send" value="send" /> Send to Mobile Phone</label>
+        </p>
+        <p>
+            <label><input type="checkbox" name="send" value="send" /> Send to Email</label>
+        </p>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Send to Mobile Phone</label>
+                </td>
+            <td>: <input type="number"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Send to Email</label>
+                </td>
+            <td> <input type="email" id="phone" style="width:100%;">
+            </td>
+        </tr>
+          <tr >
+            <td></td>
+            <td></td>
+            <td style="padding-top: 30px;" ><button style="background:#5C7AEA; color: blanchedalmond; justify-self: center;" > Generate Nabr Link </button></td>
+            </tr>
+    </table>
+    </div>
+    
 </body>
-</html>
