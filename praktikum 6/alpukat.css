@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(221, 219, 193);
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: rgb(61, 134, 202);
+}
+
+p{
+    text-align: justify;
+    width: fit-content;
+}
+
+.center {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto {
+    background-color:rgb(49, 44, 44)
+}
+
+.foto img {
+    width: 23%
+
+}
+
+.cod {
+    margin: auto;
+    width: 88%;
+    text-align: center;
+}
+
+.cod p {
+    background-color: rgb(92, 158, 158);
+    border: 5px dotted red;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(11, 11, 173);
+    display: block;
+    margin: 0 auto;
+
+}
