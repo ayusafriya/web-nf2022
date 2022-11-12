@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100px;
+    flex-direction: row;
+    margin: 0;
+    padding: 10px;
+}
+
+.outer-col-1{
+    background-color: rgba(167, 193, 247, 0.595);
+    flex: 1;
+    height: 100px;
+}
+
+.inner-col{
+    display: flex;
+}
+
+.inner-col aside{
+    height: 100px;
+    width: 100px;
+    background: rgb(155, 157, 149);
+}
+
+.inner-col article{
+    height: 100px;
+    flex: 1;
+    background: rgb(244, 186, 228);
+}
+
+.inner-col-2{
+    display: flex;
+}
+
+.inner-col-2 aside{
+    height: 100px;
+    width: 150px;
+    background: rgb(175, 248, 180);
+}
+
+.inner-col-2 article{
+    height: 100px;
+    flex: 1;
+    background: rgb(244, 139, 139);
+}
+
+nav,aside,article{
+    padding: 100px;
+    margin: 10px;
+}
