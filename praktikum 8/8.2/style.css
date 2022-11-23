@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+main article {
+    background-color: white;
+    flex: 2;
+}
+
+main aside {
+    background-color: rgb(243, 160, 160);
+    flex: 1;
+}
+
+main nav {
+    background-color: rgb(201, 158, 158);
+    flex: 1;
+}
+
+header,footer {
+    background-color: rgb(199, 141, 151);
+    padding: 1rem;
+}

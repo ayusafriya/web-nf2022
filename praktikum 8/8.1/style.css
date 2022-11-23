@@ -1,0 +1,24 @@
+img {
+    width: 4rem;
+}
+body {
+    margin: 0;
+}
+
+header {
+    background-color:rgb(155, 222, 200);
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    justify-content: space-between;
+
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
