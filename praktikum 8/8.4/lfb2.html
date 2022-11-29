@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout FlexBox2</title>
+    <style>
+        
+        body {
+            background-color: salmon;
+        }
+        
+        .header{
+            background-color: rgb(224, 245, 238);
+            height: 100px;
+            padding: 1px;
+        }
+        .main{
+            background-color: salmon;
+            height: 500px;
+            display: flex;
+        }
+        .footer{
+            background-color: rgb(223, 223, 219);
+            height: 100px;
+            padding: 0 20px;
+        }
+        .aside{
+            background-color: rgb(216, 190, 208);
+            width: 20%;
+            margin: 10px 5px 10px 1px;
+        }
+        .article{
+            background-color: rgb(245, 210, 242);
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: 10px 1px 10px 5px;
+        }
+        .bingkai img{
+            width: 200px;
+            margin: 1em;
+        }
+        .bingkai{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+         <div class="header">
+         header
+         </div> 
+     <div class="main">
+          <div class="aside">
+                aside
+          </div>
+          <div class="article">
+                <h3> article </h3>
+                <div class="bingkai">
+                    <img src="image/cat1.jpg" alt="" width="">
+                    <img src="image/cat2.jpg" alt="" width="">
+                    <img src="image/cat3.jpg" alt="" width="">
+                </div>
+          </div>
+     </div>
+
+       <div class="footer">
+            footer
+        </div>
+    </div>
+
+</body>
+</html>

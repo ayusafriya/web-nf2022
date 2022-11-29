@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    border: 1px solid;
+    margin: 0;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+nav {
+    background-color: rgb(182, 213, 221);
+    flex: 1;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    height: 42rem;
+    width: 15rem;
+}
+
+header{
+    background-color: rgb(248, 210, 235);
+    padding: 1rem;
+    width: 65rem;
+    height: 6rem;
+}
+
+main{
+    display: flex;
+}
+main article {
+    background-color: whitesmoke;
+    flex: 8;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+main aside {
+    background-color: rgb(210, 241, 252);
+    flex: 3;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 15rem;
+    height: 26rem;
+}
+
+footer {
+    background-color: rgb(248, 207, 235);
+    padding: 1rem;
+    width: 65rem;
+    height: 6rem;
+}
