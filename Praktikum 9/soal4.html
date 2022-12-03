@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body style="background-color: rgb(247, 247, 183);">
+    
+    <input type="text" id="nilaiPertama">
+            <h2>+</h2>
+        <input type="text" id="nilaiKedua" onchange="tampil()">
+            <h2>=</h2>
+        <input type="text" id="hasil" readonly>
+
+    <script>
+        function tampil() {
+            penampung = parseInt(nilaiPertama.value) + parseInt(nilaiKedua.value)
+            hasil.value = penampung
+       } 
+    </script>
+
+
+</body>
+</html>

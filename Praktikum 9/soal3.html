@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.3</title>
+</head>
+<body style="background-color: rgb(212, 212, 159);">
+    <h1>Biaya Parkir</h1>
+    <form>
+        Jam Masuk : <input type="number" id="masuk">
+        <p>
+        <br>
+        Jam Keluar : <input type="number" id="keluar">
+        </p>
+        <p>
+        <input type="button" value="Hitung" onclick="parkir()">
+        </p>
+        <br>
+        Biaya : <input type="text" id="biaya" readonly>
+    </form>
+
+    <script>
+        function parkir() {
+            let jam_masuk = document.getElementById("masuk").value;
+            let jam_keluar = document.getElementById("keluar").value;
+            let total_waktu = jam_keluar - jam_masuk;
+
+            let tarif_awal = 3000;
+            let selisih_waktu = Math.round(total_waktu - 2);
+            let tarif_lanjut = selisih_waktu * 1000;
+            let total_tarif = tarif_awal + tarif_lanjut;
+
+            document.getElementById("biaya").value = "Rp." + total_tarif;
+        }
+    </script>
+</body>
+</html>
